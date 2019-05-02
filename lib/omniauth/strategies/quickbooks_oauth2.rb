@@ -31,7 +31,9 @@ module OmniAuth
       end
 
       def callback_url
-        full_host + script_name + callback_path
+        callback = full_host + script_name + callback_path
+        puts "***************** here is the callback #{callback} "
+        callback
       end
 
       private
